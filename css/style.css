@@ -1,9 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap");
 body {
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   color: #000000;
   background-color: #fefefe;
   overflow-x: hidden;
+}
+
+.whats-app {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 15px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+}
+
+.my-float {
+  margin-top: 16px;
 }
 
 .layout_padding {
@@ -44,11 +63,11 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
 }
 
 .heading_container h2 {
@@ -61,12 +80,13 @@ body {
 .heading_container p {
   margin-top: 10px;
   margin-bottom: 0;
+  font-size: 20px;
 }
 
 .heading_container.heading_center {
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   text-align: center;
 }
 
@@ -85,7 +105,7 @@ a:focus {
 .btn:focus {
   outline: none !important;
   -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 
 /*header section*/
@@ -97,8 +117,8 @@ a:focus {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .hero_area .hero_bg_box {
@@ -111,11 +131,11 @@ a:focus {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
   overflow: hidden;
   z-index: -1;
 }
@@ -124,9 +144,9 @@ a:focus {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   -o-object-position: bottom right;
-     object-position: bottom right;
+  object-position: bottom right;
 }
 
 .sub_page .hero_area {
@@ -209,7 +229,8 @@ a:focus {
   transition: all 0.3s;
 }
 
-.custom_nav-container .navbar-toggler span::before, .custom_nav-container .navbar-toggler span::after {
+.custom_nav-container .navbar-toggler span::before,
+.custom_nav-container .navbar-toggler span::after {
   content: "";
   position: absolute;
   left: 0;
@@ -228,17 +249,18 @@ a:focus {
 
 .custom_nav-container .navbar-toggler[aria-expanded="true"] {
   -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
+  transform: rotate(360deg);
 }
 
 .custom_nav-container .navbar-toggler[aria-expanded="true"] span {
   -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
-.custom_nav-container .navbar-toggler[aria-expanded="true"] span::before, .custom_nav-container .navbar-toggler[aria-expanded="true"] span::after {
+.custom_nav-container .navbar-toggler[aria-expanded="true"] span::before,
+.custom_nav-container .navbar-toggler[aria-expanded="true"] span::after {
   -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+  transform: rotate(90deg);
   top: 0;
 }
 
@@ -246,22 +268,22 @@ a:focus {
 /* slider section */
 .slider_section {
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   position: relative;
   padding: 45px 0 145px 0;
 }
 
 .slider_section .row {
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .slider_section #customCarousel1 {
@@ -321,8 +343,8 @@ a:focus {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .slider_section .img-box img {
@@ -334,11 +356,11 @@ a:focus {
   position: unset;
   margin: 0;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .slider_section .carousel-indicators li {
@@ -356,6 +378,9 @@ a:focus {
 
 .department_section {
   position: relative;
+  background-color: #178066;
+  margin-bottom: 6rem;
+  color: white;
 }
 
 .department_section .box {
@@ -364,11 +389,11 @@ a:focus {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   margin-top: 45px;
   background-color: #ffffff;
   border-radius: 5px;
@@ -385,11 +410,11 @@ a:focus {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .department_section .box .img-box img {
@@ -418,12 +443,12 @@ a:focus {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-top: 45px;
 }
 
-.department_section .btn-box a {
+.department_section .btn-box b {
   display: inline-block;
   padding: 10px 45px;
   background-color: #62d2a2;
@@ -434,15 +459,15 @@ a:focus {
   border: 1px solid #62d2a2;
 }
 
-.department_section .btn-box a:hover {
+.department_section .btn-box b:hover {
   background-color: transparent;
   color: #62d2a2;
 }
 
 .about_section .row {
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .about_section .img-box {
@@ -450,8 +475,8 @@ a:focus {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .about_section .img-box img {
@@ -498,8 +523,8 @@ a:focus {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   overflow: hidden;
   margin-top: 45px;
   border-radius: 10px;
@@ -528,7 +553,7 @@ a:focus {
   left: 50%;
   top: 150%;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   background-color: #ffffff;
   padding: 10px;
   border-radius: 5px;
@@ -536,8 +561,8 @@ a:focus {
   display: -ms-flexbox;
   display: flex;
   opacity: 0;
-  -webkit-transition: all .3s;
-  transition: all .3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .doctor_section .box .detail-box .social_box a {
@@ -559,12 +584,13 @@ a:focus {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-top: 45px;
+  cursor: pointer;
 }
 
-.doctor_section .btn-box a {
+.doctor_section .btn-box b {
   display: inline-block;
   padding: 10px 45px;
   background-color: #1fab89;
@@ -575,7 +601,7 @@ a:focus {
   border: 1px solid #1fab89;
 }
 
-.doctor_section .btn-box a:hover {
+.doctor_section .btn-box b:hover {
   background-color: transparent;
   color: #1fab89;
 }
@@ -649,16 +675,16 @@ a:focus {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
   padding: 0;
 }
 
 .contact_section .map_container .map {
   height: 100%;
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
 
 .contact_section .map_container .map #googleMap {
@@ -667,8 +693,8 @@ a:focus {
 
 .client_section .heading_container {
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .client_section .box {
@@ -677,11 +703,11 @@ a:focus {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   text-align: center;
   margin: 45px;
   border-radius: 15px;
@@ -706,8 +732,8 @@ a:focus {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .client_section .box .detail-box .name img {
@@ -725,8 +751,8 @@ a:focus {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .client_section .carousel-control-prev,
@@ -776,8 +802,8 @@ a:focus {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .footer_section .footer_contact .contact_link_box a {
@@ -806,11 +832,11 @@ a:focus {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   color: #ffffff;
   border-radius: 100%;
   margin-right: 10px;
@@ -826,7 +852,7 @@ a:focus {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .footer_section .footer_links a {
@@ -834,8 +860,8 @@ a:focus {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   margin-right: 15px;
   margin-bottom: 15px;
   color: #ffffff;
@@ -904,4 +930,171 @@ a:focus {
 .footer_section .footer-info p a {
   color: inherit;
 }
-/*# sourceMappingURL=style.css.map */
+/* # sourceMappingURL=style.css.map */
+
+.carousal {
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+.carousal::-webkit-scrollbar {
+  display: none;
+}
+
+/* /////// */
+.home .posts {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.home .posts .post {
+  display: flex;
+  gap: 100px;
+}
+@media screen and (max-width: 768px) {
+  .home .posts .post {
+    gap: 20px;
+  }
+}
+
+.home .posts .post:nth-child(2n + 1) {
+  flex-direction: row-reverse;
+}
+
+.home .posts .post .img img {
+  width: 100%;
+  max-height: 400px;
+  min-height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.home .posts .post .content {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.home .posts .post .content h1 {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.home .posts .post .content p {
+  font-size: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .home .posts {
+    gap: 50px;
+  }
+
+  .home .posts .post {
+    flex-direction: column;
+  }
+
+  .home .posts .post:nth-child(2n + 1) {
+    flex-direction: column;
+  }
+
+  .home .posts .post .img img {
+    max-height: 300px;
+    min-height: 300px;
+    border-radius: 5px;
+  }
+
+  .home .posts .post .content h1 {
+    font-size: 24px;
+  }
+
+  .home .posts .post .content p {
+    font-size: 18px;
+  }
+}
+
+/* .post-flex start */
+
+@media screen and (min-width: 768px) {
+  .home .posts .post-flex {
+    display: block;
+  }
+  .home .posts .post-flex .img img {
+    float: left;
+    margin-right: 20px;
+    width: 600px;
+  }
+  .home .posts .post-flex .content {
+    display: block;
+  }
+}
+
+.home .posts .post-flex button {
+  text-align: center;
+  outline: none;
+}
+
+.home .posts .post-flex .btn1 {
+  display: inline-block;
+  padding: 2px 10px;
+  background-color: #ffffff;
+  color: #62d2a2;
+  border-radius: 5px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border: 1px solid #ffffff;
+  font-size: 15px;
+}
+
+.home .posts .post-flex .btn1:hover {
+  background-color: transparent;
+  color: #ffffff;
+}
+
+/* .post-flex start */
+
+/* SHOW DOCTOR */
+
+.showDoctor {
+  display: none;
+}
+
+/* <div class="post post-flex" key="">
+<div class="img">
+  <img
+    src="images/Women's health physiotherapy.jpg"
+    alt="..."
+  />
+</div>
+<div class="content post-flex">
+  <h1>Women's health physiotherapy</h1>
+  <p>
+    Conditions treated by our physiotherapy specialist include:-
+  </p>
+
+  <p>
+    a&rpar; Dropping of the pelvic organs, including bladder,
+    bowel, rectum, uterus, vagina.
+  </p>
+  <p>
+    b&rpar; Loss of bladder control, stress urinary incontinence
+    or mixed incontinence.
+  </p>
+  <p>c&rpar; Frequent sudden urges to urinate.</p>
+  <p>d&rpar; Loss of bowel control.</p>
+  <p>
+    e&rpar; Pelvic floor muscle weakness, tightness or pain.
+  </p>
+  <p>f&rpar; Breast cancer including lymphedema management.</p>
+  <p>
+    g&rpar; Pain and dysfunction during and following pregnancy.
+  </p>
+  <p>h&rpar; Pre and postpartum low back pain.</p>
+  <p>i&rpar; Dysmenorrhea.</p>
+  <p>j&rpar; Osteoporosis.</p>
+</div>
+</div> */

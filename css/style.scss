@@ -5,10 +5,10 @@ $primary2: #1fab89;
 $textCol: #1f1f1f;
 
 // import fonts - font-family: 'Nunito', sans-serif;
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap");
 
 @mixin main-font {
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
 }
 
 @mixin hero_btn($col1, $col2, $pad1, $pad2, $bRadius) {
@@ -23,7 +23,6 @@ $textCol: #1f1f1f;
   &:hover {
     background-color: transparent;
     color: $col1;
-
   }
 }
 
@@ -75,6 +74,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  background-color: red;
 
   h2 {
     position: relative;
@@ -343,6 +343,77 @@ a:focus {
 .department_section {
   position: relative;
 
+  // // CARDS START
+
+  // .home {
+  //   .posts {
+  //     margin-top: 50px;
+  //     display: flex;
+  //     flex-direction: column;
+  //     gap: 150px;
+
+  //     .post {
+  //       display: flex;
+  //       gap: 100px;
+
+  //       &:nth-child(2n + 1) {
+  //         flex-direction: row-reverse;
+  //       }
+
+  //       .img {
+  //         flex: 2;
+  //         position: relative;
+
+  //         &::after {
+  //           content: "";
+  //           width: 100%;
+  //           height: 100%;
+  //           background-color: #1fab89;
+  //           position: absolute;
+  //           top: 20px;
+  //           left: -20px;
+  //           z-index: -1;
+  //         }
+  //         img {
+  //           width: 100%;
+  //           max-height: 400px;
+  //           min-height: 400px;
+  //           object-fit: cover;
+  //         }
+  //       }
+  //       .content {
+  //         flex: 3;
+  //         display: flex;
+  //         flex-direction: column;
+  //         justify-content: space-between;
+
+  //         h1 {
+  //           font-size: 30px;
+  //         }
+  //         p {
+  //           font-size: 18px;
+  //         }
+  //         button {
+  //           width: max-content;
+  //           padding: 10px 20px;
+  //           border: none;
+  //           cursor: pointer;
+  //           background-color: white;
+  //           border: 1px solid #cf9551;
+  //           color: #cf9551;
+
+  //           &:hover {
+  //             border: 1px solid white;
+  //             background-color: #1fab89;
+  //             color: black;
+  //           }
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
+  // // CARDS END
+
   .box {
     display: flex;
     flex-direction: column;
@@ -375,7 +446,8 @@ a:focus {
         text-transform: uppercase;
       }
 
-      p {}
+      p {
+      }
 
       a {
         color: $primary2;
@@ -478,7 +550,7 @@ a:focus {
         border-radius: 5px;
         display: flex;
         opacity: 0;
-        transition: all .3s;
+        transition: all 0.3s;
 
         a {
           color: $primary1;
@@ -596,7 +668,7 @@ a:focus {
       img {
         width: 100%;
         border-radius: 100%;
-        border: 7px solid rgba($color: #fff, $alpha: .45);
+        border: 7px solid rgba($color: #fff, $alpha: 0.45);
       }
     }
 
@@ -605,7 +677,6 @@ a:focus {
       flex-direction: column;
 
       .name {
-
         img {
           width: 25px;
           margin-bottom: 5px;
